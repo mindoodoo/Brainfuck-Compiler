@@ -1,11 +1,20 @@
-# Brainfuck Interpreter
+# Brainfuck Compiler
 
-This project aims to implement a **lightweight** [brainfuck](https://esolangs.org/wiki/Brainfuck) interpreter using C.
-For the time being, this implementation remains rather basic, however in the future it aims to be **fully compliant** to the brainfuck "specification" put forth [here.](https://github.com/brain-lang/brainfuck/blob/master/brainfuck.md)
+This project aims to implement a **lightweight** [brainfuck](https://esolangs.org/wiki/Brainfuck) compiler using C and [llvm-c.](https://llvm.org/doxygen/group__LLVMC.html) **This is still a WIP** and is still being worked on.
+
+This project uses the brainfuck "specification" put forth [here](https://github.com/brain-lang/brainfuck/blob/master/brainfuck.md) as reference for it's implementation.
+
+## Todo
+
+- [ ] Implement AST parsing
+- [ ] Implement IR code generation
+  - [ ] Builtin functions
+  - [ ] Builtin function calling
+- [ ] Implement backend translation to machine code
 
 ## Building
 
-Make sure you have gcc installed.
+Make sure you have [gcc](https://gcc.gnu.org/install/) as well as [llvm-c](https://llvm.org/docs/GettingStarted.html) installed.
 
 ```
 make re
@@ -13,6 +22,4 @@ make re
 
 ## Usage
 
-```
-./bf <target file>
-```
+The compiler is not ready to be used yet.
