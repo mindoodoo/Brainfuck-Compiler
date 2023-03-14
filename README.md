@@ -6,8 +6,9 @@ This project uses the brainfuck "specification" put forth [here](https://github.
 
 ## Todo
 
-- [ ] Implement AST parsing
+- [x] Implement AST parsing
 - [ ] Implement IR code generation
+  - [x] Tape allocation
   - [ ] Builtin functions
   - [ ] Builtin function calling
 - [ ] Implement backend translation to machine code
