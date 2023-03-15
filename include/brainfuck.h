@@ -52,7 +52,7 @@ void build_state(LLVMModuleRef mod, LLVMBuilderRef builder);
 
 // Build internal library
 // (This is essentially each brainfuck function)
-int build_internal_lib(LLVMModuleRef mod);
+void build_internal_lib(LLVMModuleRef mod, LLVMBuilderRef builder);
 
     // ─── Internal Library Factories ──────────────────────────────────────────────────────────
 

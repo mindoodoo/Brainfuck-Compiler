@@ -1,11 +1,11 @@
 CC = gcc
 
 SRC = 	src/main.c \
-		src/brainfuck.c \
 		src/utils.c \
+		src/codegen.c \
 		src/ast.c
 
-CFLAGS = -Wall -std=c17 -g3
+CFLAGS = -Wall -std=c17 -g3 -lLLVM
 
 NAME = bf
 
